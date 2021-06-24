@@ -6,9 +6,9 @@ echo "----------------------cocker-compose-------------------------"
 echo "-------------------------------------------------------------"
 cat $DIR_PATH/cocker.txt
 echo "\\n\\n\\n"                                                                
-echo "-------------------------------------------------------------"
-echo "Hace lo mismo que docker-compose, pero te muestra un perrito"
-echo "-------------------------------------------------------------"
+echo "-------------------------------------------------------------------"
+echo "Hace lo mismo que docker-compose, pero te muestra un perrito cocker"
+echo "-------------------------------------------------------------------"
 sleep 2
 docker-compose "$@"
 
