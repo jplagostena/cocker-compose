@@ -2,6 +2,7 @@
 
 Hace lo mismo que el docker-compose pero te muestra este perrito cocker ¯\_(ツ)_/¯
 
+<pre>
              `-:::-::::::::-            
           -:-.   --.       :s/.         
          -s:.   /.   :--`   `+s/        
@@ -28,7 +29,7 @@ Hace lo mismo que el docker-compose pero te muestra este perrito cocker ¯\_(ツ
       .+hdhhdh+///` yhm+hhm:o+`/yyh+hmm+
         `- .`       :odyhymmhddmmmmmmmy`
                         /o-hhs/:+ooyo/  
-                       
+</pre>                       
 
 ## Disfrutalo
 
