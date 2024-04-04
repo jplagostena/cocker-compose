@@ -1,4 +1,14 @@
 #!/bin/bash
+
+if [ -x "$(command -v docker-compose)" ]; then
+    COMMAND="docker-compose"
+elif $(docker compose &>/dev/null) && [ $? -eq 0 ]; then
+    COMMAND="docker compose"
+else
+    echo "Sin docker compose no hay cocker compose. Lo siento. No negociamos."
+    exit 1
+fi
+
 SCRIPT_PATH="${BASH_SOURCE[0]}"
 DIR_PATH=$(dirname "$SCRIPT_PATH")
 echo "-------------------------------------------------------------"
@@ -7,8 +17,8 @@ echo "-------------------------------------------------------------"
 cat $DIR_PATH/cocker.txt
 echo "\\n\\n\\n"                                                                
 echo "-------------------------------------------------------------------"
-echo "Hace lo mismo que docker-compose, pero te muestra un perrito cocker"
+echo "Hace lo mismo que $COMMAND, pero te muestra un perrito cocker"
 echo "-------------------------------------------------------------------"
-sleep 2
-docker-compose "$@"
+sleep 1
+$COMMAND "$@"
 
